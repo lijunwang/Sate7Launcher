@@ -1,0 +1,114 @@
+<resources>
+    <string name="app_name">Sate7Launcher</string>
+
+    <string name="title_activity_lockscreen">LockscreenActivity</string>
+
+    <string name="previous_month">Previous month</string>
+    <string name="next_month">Next month</string>
+    <string-array name="week">
+        <item>Sunday</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+
+    </string-array>
+    <string-array name="month">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+
+    <string name="postion_cur">Current Location</string>
+    <string name="unknow">Unknow</string>
+    <string name="year">Year</string>
+
+    <bool name="sort_open">true</bool>
+    <string-array name="pkgOrder">
+        <item>com.android.dialer</item>
+        <item>com.android.contacts</item>
+        <item>com.android.mms</item>
+        <item>com.android.settings</item>
+        <item>com.android.calendar</item>
+        <item>com.android.fileexplorer</item>
+        <item>com.android.deskclock</item>
+        <item>com.android.calculator2</item>
+        <item>com.sate7.a7satesos</item>
+        <item>com.android.soundrecorder</item>
+    </string-array>
+    <string name="title_activity_lock_screen2" translatable="false">LockScreenActivity2</string>
+
+    <string name="date_title">"MMM yyyy"</string>
+    <string-array name="week_lunar">
+        <item>SUN</item>
+        <item>MON</item>
+        <item>TUE</item>
+        <item>WED</item>
+        <item>THU</item>
+        <item>FRI</item>
+        <item>SAT</item>
+    </string-array>
+    <string name="lunar" translatable="false">农历</string>
+    <string-array name="month_lunar">
+        <item>" 一月(正月)"</item>
+        <item>" 二月"</item>
+        <item>" 三月"</item>
+        <item>" 四月"</item>
+        <item>" 五月"</item>
+        <item>" 六月"</item>
+        <item>" 七月"</item>
+        <item>" 八月"</item>
+        <item>" 九月"</item>
+        <item>" 十月"</item>
+        <item>" 十一月(冬月)"</item>
+        <item>" 十二月(腊月)"</item>
+    </string-array>
+    <string-array name="lunar_days">
+        <item>初一</item>
+        <item>初二</item>
+        <item>初三</item>
+        <item>初四</item>
+        <item>初五</item>
+        <item>初六</item>
+        <item>初七</item>
+        <item>初八</item>
+        <item>初九</item>
+        <item>初十</item>
+        <item>十一</item>
+        <item>十二</item>
+        <item>十三</item>
+        <item>十四</item>
+        <item>十五</item>
+        <item>十六</item>
+        <item>十七</item>
+        <item>十八</item>
+        <item>十九</item>
+        <item>廿</item>
+        <item>廿一</item>
+        <item>廿二</item>
+        <item>廿三</item>
+        <item>廿四</item>
+        <item>廿五</item>
+        <item>廿六</item>
+        <item>廿七</item>
+        <item>廿八</item>
+        <item>廿九</item>
+        <item>卅</item>
+    </string-array>
+
+    <string name="ok">"Ok"</string>
+    <string name="cancel">"Cancel"</string>
+    <string name="reboot_title">"Need reboot"</string>
+    <string name="reboot_message">"The current mode is Internet access mode. If you need to make a phone call, you need to restart."</string>
+</resources>

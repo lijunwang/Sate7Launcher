@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/launcher_bg">
+
+    <com.sate7.sate7launcher.uitl.StatusBarHeightView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:orientation="vertical"
+        app:use_type="use_padding_top">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/lock_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:orientation="vertical">
+
+                        <TextClock
+                            android:id="@+id/textClock"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="20px"
+                            android:format24Hour="HH:mm"
+                            android:textColor="@color/textColor"
+                            android:textSize="72px" />
+
+                        <TextView
+                            android:id="@+id/tv_time_location"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="北京"
+                            android:textColor="@color/textColor"
+                            android:textSize="24px" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="15px"
+                            android:text="@string/postion_cur"
+                            android:textColor="@color/textColor"
+                            android:textSize="24px" />
+
+                        <TextView
+                            android:id="@+id/tv_location"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="N:"
+                            android:textColor="@color/textColor"
+                            android:textSize="24px" />
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="74px"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="30dp">
+
+                        <ImageView
+                            android:id="@+id/iv_call"
+                            android:layout_width="62px"
+                            android:layout_height="62px"
+                            android:layout_marginTop="10px"
+                            android:src="@mipmap/ic_phone" />
+
+                        <TextView
+                            android:id="@+id/tv_call_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top|left"
+                            android:layout_marginLeft="5px"
+                            android:background="@mipmap/notif_bg"
+                            android:gravity="center"
+                            android:textColor="@color/textColor"
+                            android:textSize="20px"
+                            android:visibility="gone" />
+                    </FrameLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.sate7.sate7launcher.view.CalendarDateView
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20px"
+                        android:layout_width="310px"
+                        android:layout_height="270px" />
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="74px"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="30dp">
+
+                        <ImageView
+                            android:id="@+id/iv_sms"
+                            android:layout_width="50px"
+                            android:layout_height="50px"
+                            android:layout_marginTop="10px"
+                            android:src="@mipmap/ic_sms" />
+
+                        <TextView
+                            android:id="@+id/tv_sms_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top|left"
+                            android:layout_marginLeft="5px"
+                            android:background="@mipmap/notif_bg"
+                            android:gravity="center"
+                            android:text="30"
+                            android:textColor="@color/textColor"
+                            android:textSize="20px"
+                            android:visibility="gone" />
+                    </FrameLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="310px"
+                    android:layout_height="270px"
+                    android:layout_marginTop="20px"
+                    android:background="@mipmap/right_bg"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <com.sate7.sate7launcher.view.CalendarDateView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/tv_year"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2018"
+                            android:textColor="@color/textColor"
+                            android:textSize="18px" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2px"
+                        android:layout_marginTop="3px"
+                        android:background="@color/textColor" />
+
+                    <TextView
+                        android:id="@+id/tv_day"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-15px"
+                        android:text="13"
+                        android:textColor="@color/textColor"
+                        android:textSize="144px" />
+
+                    <TextView
+                        android:id="@+id/tv_week"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="星期一"
+                        android:textColor="@color/textColor"
+                        android:textSize="14px" />
+
+                    <TextView
+                        android:id="@+id/tv_china_day"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5px"
+                        android:text="农历 十一月（冬月）初七"
+                        android:textColor="@color/textColor"
+                        android:textSize="14px" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </com.sate7.sate7launcher.uitl.StatusBarHeightView>
+</RelativeLayout>

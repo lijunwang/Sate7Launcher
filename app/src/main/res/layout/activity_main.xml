@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="800px"
+    android:layout_height="480px"
+    android:gravity="center"
+    android:background="@mipmap/launcher_bg"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <com.sate7.sate7launcher.uitl.StatusBarHeightView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:orientation="vertical"
+        app:use_type="use_padding_top">
+        <GridView
+            android:id="@+id/apps_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/girdview_bg"
+            android:columnWidth="52px"
+            android:numColumns="5"
+            android:scrollbars="none"
+            android:verticalSpacing="44px" />
+    </com.sate7.sate7launcher.uitl.StatusBarHeightView>
+</RelativeLayout>
